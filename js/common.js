@@ -1,0 +1,1 @@
+define(['backbone','domReady','text'], function(){})

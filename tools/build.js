@@ -1,13 +1,13 @@
 ({
-  baseUrl: '../js',
-  mainConfigFile: '../js/main.js',
+  appDir: '../.',
+  baseUrl: 'js',
   dir: '../build',
   paths: {
-        jquery: 'lib/jquery-1.8.3.min',
-        underscore: 'lib/underscore-min',
-        backbone: 'lib/backbone-min',
-        domReady: 'lib/domReady',
-        text: 'lib/text'
+        jquery: './lib/jquery-1.8.3.min',
+        underscore: './lib/underscore-min',
+        backbone: './lib/backbone-min',
+        domReady: './lib/domReady',
+        text: './lib/text'
    },
    shim: {
         backbone: {
@@ -18,7 +18,14 @@
             exports: "_"
         }
     },
-   modules: [{
-        name: 'main'
-   }]
+   modules: [
+        {
+            name: 'main',
+            exclude: ['common']
+        },
+        {
+            name: 'common'
+        }
+   ],
+   keepBuildDir: true
 })

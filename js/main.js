@@ -7,11 +7,11 @@ requirejs.config({
     //never includes a ".js" extension since
     //the paths config could be for a directory.
     paths: {
-        jquery: 'lib/jquery-1.8.3.min',
-        underscore: 'lib/underscore-min',
-        backbone: 'lib/backbone-min',
-        domReady: 'lib/domReady',
-        text: 'lib/text'
+        jquery: './lib/jquery-1.8.3.min',
+        underscore: './lib/underscore-min',
+        backbone: './lib/backbone-min',
+        domReady: './lib/domReady',
+        text: './lib/text'
     },
     shim: {
         backbone: {
@@ -26,6 +26,6 @@ requirejs.config({
 
 
 
-require(['domReady!','backbone'], function(dom,Backbone){
+require(['domReady!','common'], function(dom,common){
     alert(dom);
 });
