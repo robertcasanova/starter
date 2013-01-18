@@ -1,7 +1,7 @@
 ({
-  appDir: '../.',
-  baseUrl: 'js',
-  dir: '../build',
+  appDir: '../js',
+  baseUrl: './',
+  dir: '../build/js',
   paths: {
         jquery: './lib/jquery-1.8.3.min',
         underscore: './lib/underscore-min',
