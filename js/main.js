@@ -27,5 +27,5 @@ requirejs.config({
 
 
 require(['domReady!','backbone'], function(dom,Backbone){
-    
+    alert(dom);
 });
