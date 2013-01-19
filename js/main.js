@@ -25,6 +25,6 @@ requirejs.config({
 
 
 
-require(['domReady!','common'], function(dom,common){
-    alert(dom);
+require(['domReady!','common','views/hp'], function(dom,common, ViewHp){
+    var hp = new ViewHp();
 });

@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+  "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <title>Jasmine Spec Runner</title>
+
+  <link rel="shortcut icon" type="image/png" href="lib/jasmine-1.3.1/jasmine_favicon.png">
+  <link rel="stylesheet" type="text/css" href="lib/jasmine-1.3.1/jasmine.css">
+  <script type="text/javascript" src="lib/jasmine-1.3.1/jasmine.js"></script>
+  <script type="text/javascript" src="lib/jasmine-1.3.1/jasmine-html.js"></script>
+
+  
+  <!-- include spec files here... -->
+  <script type="text/javascript">
+ 
+        var require = {
+            paths: {
+                jquery: '../js/lib/jquery-1.8.3.min',
+                underscore: '../js/lib/underscore-min',
+                backbone: '../js/lib/backbone-min',
+                domReady: '../js/lib/domReady',
+                text: '../js/lib/text',
+                common: '../js/common',
+                views: '../js/views'
+            },
+            shim: {
+                backbone: {
+                    deps: ['underscore','jquery'],
+                    exports: "Backbone"
+                },
+                underscore: {
+                    exports: "_"
+                }
+            }
+        };
+ 
+  </script>
+  <script type="text/javascript" src="../js/lib/require.js"></script>
+
+
+  <script type="text/javascript">
+ 
+        require(
+            [
+                "domReady!",
+                "spec/common.js",
+                "spec/views/hp.js"
+            ],
+            function( document ){
+ 
+                // Set up the HTML reporter - this is reponsible for
+                // aggregating the results reported by Jasmine as the
+                // tests and suites are executed.
+                jasmine.getEnv().addReporter(
+                    new jasmine.HtmlReporter()
+                );
+ 
+                // Run all the loaded test specs.
+                jasmine.getEnv().execute();
+ 
+            }
+        );
+ 
+  </script>
+
+</head>
+
+<body>
+</body>
+</html>
