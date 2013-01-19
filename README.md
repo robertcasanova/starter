@@ -3,12 +3,12 @@ starter
 
 Starting point for new project.
 
-*** JS optimize ***
+### JS optimize
 
 Optimize JS using: node tools/r.js -o tools/build.js
 
 
-*** Testing ***
+### Testing
 
 Use Jasmine + PhantomJS to run tests.
 You need to install PhantomJS: http://phantomjs.org/
