@@ -1,7 +1,8 @@
 starter
 =======
 
-Starting point for new project.
+Starting point for new AMD projects.
+
 
 ### JS optimize
 
