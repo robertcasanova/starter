@@ -9,7 +9,7 @@ define(['common','views/hp'], function(common, Hp) {
 		});
 		
 		it("Should be binded to element #page.hp ", function(){
-			expect(hp.$el.attr('class')).toBe('hp');
+			expect(hp.$el).toBe('#page.hp');
 		});
 		
 		$('body').find('.hp').remove();
