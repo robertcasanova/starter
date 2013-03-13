@@ -3,7 +3,8 @@ define(['common','views/hp'], function(common, Hp) {
 
 		setFixtures('<div class="hp" id="page"></div>');
 		
-		var hp = new Hp();
+		var hp = new Hp({el:'#page.hp'});
+
 
 		it("Should exist",function() {
 			expect(hp).toBeDefined();
