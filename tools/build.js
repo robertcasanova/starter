@@ -20,7 +20,7 @@
     },
    modules: [
         {
-            name: 'main',
+            name: 'homepage',
             exclude: ['common']
         },
         {

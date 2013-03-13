@@ -24,7 +24,7 @@ requirejs.config({
 });
 
 
-require(['views/hp','domReady!','common'], function(ViewHp) {
+require(['domReady!','common','views/hp','views/footer'], function(dom,com,ViewHp) {
 
     var Homepage = Backbone.Router.extend({
         routes: {

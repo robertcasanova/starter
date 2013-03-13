@@ -1,4 +1,4 @@
-define([], function() {
+define(['common'], function() {
 	var Footer = Backbone.View.extend({
 		options: {
 			rendered: false,
